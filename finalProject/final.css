@@ -1,0 +1,25 @@
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(14, 38, 58);
+}
+
+.back-nav {
+    font-size: 3rem;
+    opacity: 0.5;
+    position: fixed;
+    top: 2%;
+    left: 50%;
+    z-index: 20;
+}
+
+.back-nav a {
+    color: blanchedalmond;
+    text-decoration: none;
+}
+
+.back-nav a:hover {
+    color: grey;
+}

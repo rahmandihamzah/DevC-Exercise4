@@ -1,11 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>Exercise 4</title>
+    <title>Rahmandi Hamzah</title>
+
+    <!-- CDN BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- CDN BOOTSTRAP JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+
+    <!-- ICON -->
+    <script src="https://kit.fontawesome.com/0007e3663d.js"></script>
+
+    <!-- CSS STYLE -->
+    <link rel="stylesheet" href="./style.css">
+
+    <script src="./calculator.js"></script>
+    <script src="./daftarPlanet.js"></script>
 </head>
-<body>
-    <center>
-        <h1>Final Project</h1>
-    </center>
+
+<body onload="initialize()">
+    <div class="point-nav">
+        <ul>
+            <li><a href="#name-container">.</a></li>
+            <li><a href="#biodata-container">.</a></li>
+            <!-- <li><a href="#exercise-list-container">.</a></li> -->
+            <li><a href="#exercise2">.</a></li>
+            <li><a href="#exercise3">.</a></li>
+            <li><a href="#exercise4">.</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="back-nav">
+            <a href="#">
+                <i class="fas fa-arrow-up"></i>
+            </a>
+        </div>
+        <div class="exercise-list-container col-12" id="name-container">
+            <div class="exercise-card col-12 col-md-2 mx-1">
+                <a href="#">
+                    Exercise 1
+                </a>
+            </div>
+            <div class="exercise-card col-12 col-md-2 mx-1">
+                <a href="#exercise2">
+                    Exercise 2
+                </a>
+            </div>
+            <div class="exercise-card col-12 col-md-2 mx-1">
+                <a href="#exercise3">
+                    Exercise 3
+                </a>
+            </div>
+            <div class="exercise-card col-12 col-md-2 mx-1">
+                <a href="./finalProject/final1.html">
+                    Final Project
+                </a>
+            </div>
+        </div>
+        <div class="name-container col-12">
+            <div class="name-text">
+                <p>
+                    Hello <span style="color: rgb(231, 173, 38); font-size: 5rem">.</span> <br>
+                    I am Rahmandi <br> Hamzah
+                </p>
+            </div>
+            <div class="name-pic">
+                <img class="img-profile" src="./profilePic.png" alt="profilePic">
+            </div>
+        </div>
+        <div class="biodata-container col-12" id="biodata-container">
+            <table class="table table-borderless">
+                <tbody>
+                    <tr>
+                        <td>Full Name</td>
+                        <td>:</td>
+                        <td>Rahmandi Hamzah</td>
+                    </tr>
+                    <tr>
+                        <td>Nationality</td>
+                        <td>:</td>
+                        <td>Indonesia</td>
+                    </tr>
+                    <tr>
+                        <td>Gender</td>
+                        <td>:</td>
+                        <td>Male</td>
+                    </tr>
+                    <tr>
+                        <td>Marital Status</td>
+                        <td>:</td>
+                        <td>Single</td>
+                    </tr>
+                    <tr>
+                        <td>Birthday</td>
+                        <td>:</td>
+                        <td>Februari 16 2019</td>
+                    </tr>
+                    <tr>
+                        <td>Current Job</td>
+                        <td>:</td>
+                        <td>DOES University Student</td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td>:</td>
+                        <td>rahmandi.hamzah@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Phone Number</td>
+                        <td>:</td>
+                        <td>08194491796</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="exercise2-container" id="exercise2">
+            <div class="title-container">
+                <p class="exercise-sub-title">EXERCISE 2</p>
+                <hr class="my-0">
+                <p class="exercise-title">Kalkulator</p>
+            </div>
+            <!-- <p class="coming-soon">
+                COMING SOON
+            </p> -->
+            <form action="post" name="kalkulator" class="form-calcultor">
+                <input type="text" name="value1" class="input-group mb-3">
+
+                <select name="operator" class="custom-select mb-3">
+                    <option value="tambah">+</option>
+                    <option value="kurang">-</option>
+                    <option value="bagi">/</option>
+                    <option value="kali">*</option>
+                </select>
+
+                <input type="text" name="value2" class="input-group mb-3">
+                <p>=</p>
+                <input type="text" name="hasil" class="input-group mb-3">
+                <input type="button" value="hasil" onclick="hitung()" class="btn btn-secondary">
+            </form>
+        </div>
+        <div class="exercise3-container" id="exercise3">
+            <div class="title-container">
+                <p class="exercise-sub-title">EXERCISE 3</p>
+                <hr class="my-0">
+                <p class="exercise-title">Daftar Planet</p>
+            </div>
+            <!-- <p class="coming-soon">COMING SOON</p> -->
+            <div class="table-scroll-y table-scrollbar">
+                <input type="text" class="input input-group mb-2" id="searchInput" onkeyup="searchFunction()"
+                    placeholder="search by names...">
+                <table id="showTable" class="table table-bordered table-striped mb-0 show-table">
+                    <thead>
+                        <tr class="row-title">
+                            <th>NO.</th>
+                            <th>NAME</th>
+                            <th>ROTATION PERIOD</th>
+                            <th>ORBITAL PERIOD</th>
+                            <th>DIAMETER</th>
+                            <th>CLIMATE</th>
+                            <th>GRAVITY</th>
+                            <th>TERRAIN</th>
+                            <th>SURFACE WATER</th>
+                            <th>POPULATION</th>
+                            <th>RESIDENTS</th>
+                            <th>FILMS</th>
+                            <th>CREATED</th>
+                            <th>EDITED</th>
+                            <th>URL</th>
+                        </tr>
+                    </thead>
+                    <tbody id="planets">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="exercise4-container" id="exercise4">
+            <div class="title-container">
+                <p class="exercise-sub-title">FINAL PROJECT</p>
+            </div>
+
+            <p class="coming-soon">Go to <a href="./finalProject/final1.html">Final Project</a> </p>
+
+            <!-- Button trigger modal -->
+            <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable">
+                Launch demo modal
+            </button> -->
+
+            <!-- Modal -->
+            <!-- <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in,
+                            egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+
+                            Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus
+                            vel augue laoreet rutrum faucibus dolor auctor.
+
+                            Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel
+                            scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus
+                            auctor fringilla.
+
+                            Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in,
+                            egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+
+                            Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus
+                            vel augue laoreet rutrum faucibus dolor auctor.
+
+                            Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel
+                            scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus
+                            auctor fringilla.
+
+                            Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in,
+                            egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+
+                            Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus
+                            vel augue laoreet rutrum faucibus dolor auctor.
+
+                            Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel
+                            scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus
+                            auctor fringilla.
+
+                            Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in,
+                            egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+
+                            Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus
+                            vel augue laoreet rutrum faucibus dolor auctor.
+
+                            Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel
+                            scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus
+                            auctor fringilla.
+
+                            Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in,
+                            egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+
+                            Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus
+                            vel augue laoreet rutrum faucibus dolor auctor.
+
+                            Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel
+                            scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus
+                            auctor fringilla.
+
+                            Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in,
+                            egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+
+                            Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus
+                            vel augue laoreet rutrum faucibus dolor auctor.
+
+                            Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel
+                            scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus
+                            auctor fringilla.
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./jquery.js"></script>
+    <script src="./finalProject.js"></script>
 </body>
+
 </html>
