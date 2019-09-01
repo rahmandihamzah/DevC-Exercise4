@@ -1,9 +1,11 @@
+@import url("https://www.w3schools.com/w3css/4/w3.css");
+
 * {
     scroll-behavior: smooth;
 }
 
 body {
-    background-color: rgb(14, 38, 58);
+    /* background-color: rgb(14, 38, 58); */
 }
 
 .back-nav {
@@ -11,15 +13,39 @@ body {
     opacity: 0.5;
     position: fixed;
     top: 2%;
-    left: 50%;
+    left: 2%;
     z-index: 20;
 }
 
 .back-nav a {
-    color: blanchedalmond;
+    color: black;
     text-decoration: none;
 }
 
 .back-nav a:hover {
     color: grey;
+}
+
+.img-opening {
+    /* border: 1px solid black; */
+    position: relative;
+}
+
+.img-highlight {
+    width: 100%;
+}
+
+.modal-trigger {
+    /* border: 1px solid black; */
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    width: 19%;
+    height: 34%;
+}
+
+.img-slider-content {
+    /* height: 10vh; */
 }

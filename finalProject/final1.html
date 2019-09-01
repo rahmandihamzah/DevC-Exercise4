@@ -26,21 +26,83 @@
     <script src="https://kit.fontawesome.com/0007e3663d.js"></script>
 
     <!-- CSS STYLE -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="./final.css">
+
+    <!-- SCRIPT -->
+    <script src="./finalProject.js"></script>
 </head>
 
 <body>
+    <div class="img-opening col-12 p-0 mb-3">
+        <img class="img-highlight" src="./assets/mural/1.jpg">
+        <button class="modal-trigger" data-toggle="modal" data-target="#exampleModalScrollable"></button>
 
-    <div class="container">
-        <div class="back-nav">
-            <a href="./final2.html">
-                <i class="fas fa-arrow-right"></i>
-            </a>
-            <a href="../index.html">
-                <i class="fas fa-arrow-left"></i>
-            </a>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalScrollableTitle">BONES WALLS -Wall Painting and Design-
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Kami Menawarkan jasa yang bergerak dalam bidang seni rupa dan desain. Kami fokus pada bidang
+                        pembuatan murak (gambar dinding) dan freelance desain branding. <br>
+                        Saat ini Mural tidak hanya menjadi sarana untuk memperindah dinding/ruangan semata, namun mural
+                        dapat menjadi medium dalam menyampaikan pesan secara estetis, serta dapat menjadi sebuah
+                        branding yang dapat memberikan karakter tersendiri di tempat usaha anda. <br>
+                        Dengan ini kami menawarkan jasa pembuatan Mural (gambar dinding) dan jasa Desain branding. Atas
+                        perhatian dan kerjasamanya kami ucapkan terima kasih.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+    <div class="container">
+        <div class="w3-content visible-md" style="max-width:1200px">
+            <a href="./typografi.html">
+                <img class="mySlides" src="./assets/mural/3.jpg" style="width:100%">
+            </a>
+            <a href="./tropical.html">
+                <img class="mySlides" src="./assets/mural/8.jpg" style="width:100%">
+            </a>
+            <a href="./dodle.html">
+                <img class="mySlides" src="./assets/mural/13.jpg" style="width:100%">
+            </a>
+            <a href="./drawing.html">
+                <img class="mySlides" src="./assets/mural/21.jpg" style="width:100%">
+            </a>
+
+            <div class="w3-row-padding w3-section">
+                <div class="w3-col s3">
+                    <img class="demo w3-opacity" src="./assets/mural/3.jpg" style="width:100%" onclick="currentDiv(1)">
+                </div>
+                <div class="w3-col s3">
+                    <img class="demo w3-opacity" src="./assets/mural/8.jpg" style="width:100%;" onclick="currentDiv(2)">
+                </div>
+                <div class="w3-col s3">
+                    <img class="demo w3-opacity" src="./assets/mural/13.jpg" style="width:100%;"
+                        onclick="currentDiv(3)">
+                </div>
+                <div class="w3-col s3">
+                    <img class="demo w3-opacity" src="./assets/mural/21.jpg" style="width:100%;"
+                        onclick="currentDiv(4)">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="img-opening col-12 p-0">
+        <img class="img-highlight" src="./assets/mural/2.jpg">
+    </div>
+
 
 </body>
 
